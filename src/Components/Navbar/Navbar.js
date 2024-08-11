@@ -5,6 +5,7 @@ import search from '../Assets/search.jpg'
 import cart from '../Assets/cart.jpg'
 import wishlist from '../Assets/wishlist.jpg'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 function Navbar() {
 
@@ -41,12 +42,12 @@ function Navbar() {
         <>
             <div className="navbar flex w-full h-[50px] fixed items-center justify-between z-50 shadow-lg shadow-gray-100 md:px-10 px-4">
                 <div className="nav-logo">
-                    <img src={logo} alt="Uttam Attires" />
+                    <Link to='/'><img src={logo} alt="Uttam Attires" /></Link>
                 </div>
                 <div className="menu md:flex md:visible hidden list-none gap-5">
                     {links.map((link, index) => {
                         return (
-                            <li key={index}><a href={link.path}>{link.name}</a></li>
+                            <li key={index}><Link to={link.path}>{link.name}</Link></li>
                         )
                     })}
                 </div>
@@ -62,7 +63,7 @@ function Navbar() {
             <div className="mobMenu absolute top-20 left-0 hidden list-none px-10 backdrop-blur" >
                 {links.map((link, index) => {
                     return (
-                        <li key={index} className='py-3'><a href={link.path}>{link.name}</a></li>
+                        <li key={index} className='py-3'><Link to={link.path}>{link.name}</Link></li>
                     )
                 })}
             </div>
