@@ -60,7 +60,7 @@ function Navbar() {
                     <button onClick={setMenuButtonOnClick}><p className='text-4xl mt-[-10px]'>+</p></button>
                 </div>
             </div>
-            <div className="mobMenu absolute top-20 left-0 hidden list-none px-10 backdrop-blur" >
+            <div className="mobMenu absolute top-20 left-0 hidden list-none px-10 mx-5 py-5 backdrop-blur rounded-3xl border border-gray-100" >
                 {links.map((link, index) => {
                     return (
                         <li key={index} className='py-3'><Link to={link.path}>{link.name}</Link></li>
