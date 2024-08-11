@@ -1,5 +1,9 @@
 import React from 'react'
 import './Hero.css'
+import p1 from '../../Assets/HeroPics/TestPics/BG1.png'
+import p2 from '../../Assets/HeroPics/TestPics/BG2.png'
+import p3 from '../../Assets/HeroPics/TestPics/BG3.png'
+import p4 from '../../Assets/HeroPics/TestPics/BG4.png'
 
 function Hero() {
     return (
@@ -12,9 +16,20 @@ function Hero() {
                     <p>Uttam Attires</p>
                 </div>
             </div>
-            <div className="frames-slideshow h-[50vh]">
+            <div className="frames-slideshow h-[50vh] flex flex-nowrap">
                 <div className="frames">
-                    
+                    <div className="frame1 w-[200px] h-[400px] rounded-tr-2xl rounded-bl-2xl overflow-hidden">
+                        <img src={p1} alt="" />
+                    </div>
+                    <div className="frame1 w-[200px] h-[400px] rounded-tr-2xl rounded-bl-2xl overflow-hidden">
+                        <img src={p2} alt="" />
+                    </div>
+                    <div className="frame1 w-[200px] h-[400px] rounded-tr-2xl rounded-bl-2xl overflow-hidden">
+                        <img src={p3} alt="" />
+                    </div>
+                    <div className="frame1 w-[200px] h-[400px] rounded-tr-2xl rounded-bl-2xl overflow-hidden">
+                        <img src={p4} alt="" />
+                    </div>
                 </div>
             </div>
         </>

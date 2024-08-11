@@ -40,7 +40,7 @@ function Navbar() {
 
     return (
         <>
-            <div className="navbar flex w-full h-[50px] fixed items-center justify-between z-50 shadow-lg shadow-gray-100 md:px-10 px-4">
+            <div className="navbar flex w-full h-[50px] fixed items-center justify-between z-50 shadow-lg bg-white md:px-10 px-4">
                 <div className="nav-logo">
                     <Link to='/'><img src={logo} alt="Uttam Attires" /></Link>
                 </div>
