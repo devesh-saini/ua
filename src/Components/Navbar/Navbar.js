@@ -46,23 +46,23 @@ function Navbar() {
                 <div className="menu md:flex md:visible hidden list-none gap-5">
                     {links.map((link, index) => {
                         return (
-                            <li key={index}>{link.name}</li>
+                            <li key={index}><a href={link.path}>{link.name}</a></li>
                         )
                     })}
                 </div>
-                <div className="nav-search-cart flex gap-5 visible ">
+                <div className="nav-search-wishlist-cart flex gap-5 visible ">
                     <img src={search} alt="Search" />
                     <img src={wishlist} alt="Wishlist" />
                     <img src={cart} alt="Cart" />
                 </div>
                 <div className="menuButton md:hidden visible">
-                    <button onClick={setMenuButtonOnClick}><p>MENU</p></button>
+                    <button onClick={setMenuButtonOnClick}><p className='text-4xl mt-[-10px]'>+</p></button>
                 </div>
             </div>
-            <div className="mobMenu absolute top-20 left-0 hidden list-none px-10" >
+            <div className="mobMenu absolute top-20 left-0 hidden list-none px-10 backdrop-blur" >
                 {links.map((link, index) => {
                     return (
-                        <li key={index} className='py-3'>{link.name}</li>
+                        <li key={index} className='py-3'><a href={link.path}>{link.name}</a></li>
                     )
                 })}
             </div>
