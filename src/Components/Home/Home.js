@@ -4,8 +4,8 @@ import Hero from './Hero/Hero'
 function Home() {
     return (
         <>
-            <div className="homeMain max-h-[50vh]">
-                <div className="heroMain">
+            <div className="homeMain">
+                <div className="heroMain max-h-[50vh]">
                     <Hero />
                 </div>
             </div>
