@@ -1,7 +1,7 @@
 import React from 'react'
 import './Navbar.css'
 import logo from '../Assets/logo.jpg'
-import search from '../Assets/search.jpg'
+import account from '../Assets/account.jpg'
 import cart from '../Assets/cart.jpg'
 import wishlist from '../Assets/wishlist.jpg'
 import { useState } from 'react'
@@ -52,7 +52,7 @@ function Navbar() {
                     })}
                 </div>
                 <div className="nav-search-wishlist-cart flex gap-5 visible ">
-                    <img src={search} alt="Search" />
+                    <img src={account} alt="Account" />
                     <img src={wishlist} alt="Wishlist" />
                     <img src={cart} alt="Cart" />
                 </div>
