@@ -1,10 +1,10 @@
 import React from 'react'
 import './Hero.css'
 import { Link } from 'react-router-dom'
-import p1 from '../../Assets/HeroPics/TestPics/BG1.png'
-import p2 from '../../Assets/HeroPics/TestPics/BG2.png'
-import p3 from '../../Assets/HeroPics/TestPics/BG3.png'
-import p4 from '../../Assets/HeroPics/TestPics/BG4.png'
+import p1 from '../Assets/HeroPics/TestPics/BG1.png'
+import p2 from '../Assets/HeroPics/TestPics/BG2.png'
+import p3 from '../Assets/HeroPics/TestPics/BG3.png'
+import p4 from '../Assets/HeroPics/TestPics/BG4.png'
 
 function Hero() {
     return (
