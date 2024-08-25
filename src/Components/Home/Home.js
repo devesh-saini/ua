@@ -6,7 +6,7 @@ import p2 from '../Assets/HeroPics/TestPics/BG2.png'
 import p3 from '../Assets/HeroPics/TestPics/BG3.png'
 import p4 from '../Assets/HeroPics/TestPics/BG4.png'
 import ItemCard from '../../Essentials/ItemCard'
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 function Home() {
 
