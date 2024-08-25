@@ -7,6 +7,7 @@ import p3 from '../Assets/HeroPics/TestPics/BG3.png'
 import p4 from '../Assets/HeroPics/TestPics/BG4.png'
 import ItemCard from '../../Essentials/ItemCard'
 import { Link } from 'react-router-dom'
+import { toHaveDescription } from '@testing-library/jest-dom/dist/matchers'
 
 function Home() {
 
@@ -14,22 +15,26 @@ function Home() {
         {
             img: p1,
             title: "Test Title",
-            price: 499
+            price: 499,
+            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint labore dolor repudiandae"
         },
         {
             img: p2,
             title: "Test Title",
-            price: 499
+            price: 499,
+            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint labore dolor repudiandae"
         },
         {
             img: p3,
             title: "Test Title",
-            price: 499
+            price: 499,
+            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint labore dolor repudiandae"
         },
         {
             img: p4,
             title: "Test Title",
-            price: 499
+            price: 499,
+            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint labore dolor repudiandae"
         }
     ]
 
@@ -46,7 +51,7 @@ function Home() {
                     {
                         featured.map((item, index) => {
                             return (
-                                <ItemCard img={item.img} title={item.title} price={item.price} />
+                                <ItemCard img={item.img} title={item.title} price={item.price} description={item.description}/>
                             )
                         })
                     }
