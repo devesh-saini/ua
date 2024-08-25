@@ -7,7 +7,6 @@ import p3 from '../Assets/HeroPics/TestPics/BG3.png'
 import p4 from '../Assets/HeroPics/TestPics/BG4.png'
 import ItemCard from '../../Essentials/ItemCard'
 import { Link } from 'react-router-dom'
-import { toHaveDescription } from '@testing-library/jest-dom/dist/matchers'
 
 function Home() {
 

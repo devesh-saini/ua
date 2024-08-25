@@ -9,7 +9,7 @@ function ItemCard(props) {
           <div className="item-image overflow-hidden aspect-auto rounded-md">
             <img src={props.img} alt="" width={"250px"} height={"350px"}/>
           </div>
-          <div className="properties pt-2 flex justify-between text-[14px] font-semibold">
+          <div className="properties pt-2 text-[14px] font-semibold">
             <div className="title">
               {props.title}
             </div>
@@ -17,9 +17,9 @@ function ItemCard(props) {
               {props.price}
             </div>
           </div>
-          <div className="item-description text-[10px] text-gray-500">
+          {/* <div className="item-description text-[10px] text-gray-500">
             {props.description}
-          </div>
+          </div> */}
         </div>
       </div>
     </>
