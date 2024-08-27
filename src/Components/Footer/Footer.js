@@ -16,7 +16,7 @@ function Footer() {
                 <div className="heading text-center font-[Tangerine] text-6xl pt-[30px]">
                     Uttam Attires
                 </div>
-                <div className="line w-full pl-[25px] flex justify-center">
+                <div className="line w-full flex justify-center pt-5">
                     <div className="lineMain h-[2px] w-32 bg-amber-200"></div>
                 </div>
                 <div className="info flex flex-col md:flex-row gap-5 md:px-5 py-[30px]">
@@ -31,9 +31,9 @@ function Footer() {
                         </div>
                     </div>
                     <div className="line w-full flex justify-center">
-                        <div className="lineMain h-[2px] w-32 bg-amber-200"></div>
+                        <div className="lineMain h-[2px] w-32 md:bg-amber-100 bg-amber-200"></div>
                     </div>
-                    <div className="right list-none py-[15px] flex flex-col gap-5">
+                    <div className="right w-1/4 list-none py-[15px] flex flex-col gap-5">
                         {links.map((link, index) => {
                             return (
                                 <li key={index}><Link to={link.path}>{link.name}</Link></li>
