@@ -8,13 +8,17 @@ import Footer from './Components/Footer/Footer'
 function App() {
   return (
     <>
-      <div className="everything">
+      <div className="everything min-h-[100vh] flex flex-col justify-between">
         <Router>
-          <Navbar />
+          <div className="Navbar">
+            <Navbar />
+          </div>
           <Routes>
             <Route path='/' element={<Home />} />
           </Routes>
-          <Footer />
+          <div className="Footer">
+            <Footer />
+          </div>
         </Router>
       </div>
     </>

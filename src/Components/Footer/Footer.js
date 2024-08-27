@@ -14,7 +14,7 @@ function Footer() {
         <>
             <div className="main md:p-[50px] p-5 bg-amber-100 rounded-t-3xl md:rounded-t-[75px]">
                 <div className="heading text-center font-[Tangerine] text-6xl pt-[30px]">
-                    Uttam Attires
+                    <Link to={'/'}>Uttam Attires</Link>
                 </div>
                 <div className="line w-full flex justify-center pt-5">
                     <div className="lineMain h-[2px] w-32 bg-amber-200"></div>
